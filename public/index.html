@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="search-box">
+        <div>
+            <input type="text" name="searchStr" placeholder="请输入网站名称" autofocus>
+        </div>
+        <div id="submit">搜索</div>
+    </div>
+
+    <div class="description">伪原创和转载常用网站</div>
+
+    <!-- 展示数据 -->
+    <div id="result"></div>
+
+    <!-- 没有数据时创立表单 -->
+    <div id="new" >
+        <div class="add-new" >
+            <label for="name">网址名称</label>
+            <input type="text" name="name">
+            <label for="href">网址</label>
+            <input type="text" name="href">
+            <label for="keywords">关键词</label>
+            <input type="text" name="keywords">
+            <button data-type="add" type="button">添加</button>
+        </div>  
+        <div class="new-submit">
+            <button class="new-input-submit" data-type-test="submit">提交</button>
+        </div>
+        
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
